@@ -15,9 +15,6 @@ vector_db = QdrantVectorStore.from_existing_collection(
     embedding=embedding_model
 )
 
-
-query = input("User, Ask Something from me")
-
 def process_query(query: str):
     
     print("Searching Chunks: ", query)
